@@ -7,6 +7,7 @@ import Header from "./components/Header/Header"
 import NotFound from './components/NotFound/NotFound';
 import Services from './components/Services/Services';
 import AboutUs from './components/AboutUs/AboutUs';
+import Register from './components/Register/Register';
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login></Login>
+        </Route>
+        <Route exact path="/register">
+          <Register></Register>
         </Route>
         <Route path="*">
           <NotFound></NotFound>
