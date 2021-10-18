@@ -5,12 +5,14 @@ import {
 } from "firebase/auth";
 
 import initializeAuthentication from "../Firebase/firebase.init";
+import { useHistory } from "react-router";
 
 initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
+    const history = useHistory();
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -20,15 +22,15 @@ const useFirebase = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-
+                history.push('/home');
             })
             .catch(error => {
                 setError(error.message);
             });
     };
 
-    const registerWithEmailPassword = (name, email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
+    const registerWithEmailPassword = async (name, email, password) => {
+        await createUserWithEmailAndPassword(auth, email, password)
             .then(userCredential => {
                 const user = userCredential.user;
                 console.log("new user credential:", user);
@@ -37,12 +39,12 @@ const useFirebase = () => {
                 console.log(error.message);
             })
 
-        updateProfile(auth.currentUser, {
+            console.log(name);
+        await updateProfile(auth.currentUser, {
             displayName: name
         })
             .then(() => {
-                // Profile updated!
-                // ...
+                console.log("name update done.")
             })
             .catch((error) => {
                 console.log(error.message);
