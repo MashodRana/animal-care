@@ -83,7 +83,7 @@ const Register = () => {
                                             className="btn btn-primary btn-login text-uppercase fw-bold"
                                             type="submit"
 
-                                        >Sign in</button>
+                                        >Sign up</button>
                                     </div>
                                 </form>
                                 

@@ -6,8 +6,10 @@ import Login from "./components/Login/Login"
 import Header from "./components/Header/Header"
 import NotFound from './components/NotFound/NotFound';
 import Services from './components/Services/Services';
-import AboutUs from './components/AboutUs/AboutUs';
+import Service from './components/Services/Service';
+import ContactUs from './components/ContactUs/ContactUs';
 import Register from './components/Register/Register';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -25,8 +27,13 @@ function App() {
         <Route exact path="/services">
           <Services></Services>
         </Route>
-        <Route exact path="/aboutus">
-          <AboutUs></AboutUs>
+
+        <Route exact path="/services/:serviceId">
+         <Service></Service>
+        </Route>
+
+        <Route exact path="/contactus">
+          <ContactUs></ContactUs>
         </Route>
         <Route exact path="/login">
           <Login></Login>
@@ -38,6 +45,7 @@ function App() {
           <NotFound></NotFound>
         </Route>
       </Switch>
+      <Footer></Footer>
       </BrowserRouter>
     </div>
   );

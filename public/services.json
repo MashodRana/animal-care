@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "service_title": "Urgent Care",
+        "service_summary": "Those times when something’s going on with your pet, and you need a pro to take a look. If it’s after-hours, a serious injury, or life-threatening illness, we’ll refer you to a 24-hour emergency hospital.",
+        "service_cost": 79,
+        "icon": "https://image.flaticon.com/icons/png/512/1227/1227903.png"
+    },
+    {
+        "id": 2,
+        "service_title": "Vaccinations",
+        "service_summary": "We’ll keep your pet safe from heartworm, bordetella and more — and send reminders when they’re due for a vaccine. ",
+        "service_cost": 85,
+        "icon": "https://image.flaticon.com/icons/png/512/1256/1256512.png"
+    },
+    {
+        "id": 3,
+        "service_title": "Behavioral",
+        "service_summary": "We’ll teach you techniques to help correct common dog behavior problems — it’s as much about training the human as the animal.",
+        "service_cost": 30,
+        "icon": "https://image.flaticon.com/icons/png/512/1241/1241747.png"
+    },
+    {
+        "id": 4,
+        "service_title": "Surgeries",
+        "service_summary": "We perform oral, soft-tissue, and mass removal surgeries right here in our clinic",
+        "service_cost": 100,
+        "icon": "https://image.flaticon.com/icons/png/512/1225/1225450.png"
+    },
+    {
+        "id": 5,
+        "service_title": "Dental Cleanings",
+        "service_summary": "We’ll radiograph, scale and polish your pet’s teeth — which will make the kisses and licks much more pleasant.",
+        "service_cost": 70,
+        "icon": "https://image.flaticon.com/icons/png/512/893/893946.png"
+    },
+    {
+        "id": 6,
+        "service_title": "Diagnostic Tests",
+        "service_summary": "It’s all in-house — we perform blood, urine and fecal tests, digital X-rays, and other tests on premises to provide fast and reliable results.",
+        "service_cost": 52,
+        "icon": "https://image.flaticon.com/icons/png/512/416/416198.png"
+    },
+    {
+        "id": 7,
+        "service_title": "Wellness Exam",
+        "service_summary": "We provide nose-to-tail consultations to make sure yourpet is happy and healthy. And, if your pet is due for avaccination or needs other services, our vets willreview costs with you before proceeding",
+        "service_cost": 43,
+        "icon": "https://image.flaticon.com/icons/png/512/1012/1012575.png"
+    },
+    {
+        "id": 8,
+        "service_title": "Spays & Neuters",
+        "service_summary": "It’s a rite of passage in every dog’s and cat’s life — we’ll make it as painless and comfortable as possible.",
+        "service_cost": 24,
+        "icon": "https://image.flaticon.com/icons/png/512/1219/1219900.png"
+    }
+]

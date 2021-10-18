@@ -1,0 +1,14 @@
+.intro-section {
+    background-image: url('../../images/intro-image.jpg');
+    height: 600px;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.intro-section h2{
+    font-size: 60px;
+}
+.intro-section h2 span{
+    color: #A0522D;
+}

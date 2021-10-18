@@ -6,7 +6,7 @@ import "./Login.css"
 
 const Login = () => {
     const history  = useHistory();
-    const { user, signInUsingGoogle, signInUsingEmailPassword } = useFirebase();
+    const { signInUsingGoogle, signInUsingEmailPassword } = useFirebase();
     const [userEmail, setUserEmail] = useState('');
     const [userPassword, setUserPassword] = useState('');
     const handleSignIn = (evnt) => {
