@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid d-flex justify-content-between">
           <span>
-            <NavLink className="navbar-brand" to="/">Animal Care</NavLink>
+            <NavLink className="navbar-brand" to="/"><i class="fas fa-cat"></i>&nbsp;Animal Care</NavLink>
           </span>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
