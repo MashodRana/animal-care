@@ -12,6 +12,7 @@ import Register from './components/Register/Register';
 import Footer from './components/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Appointment from './components/Appointment/Appointment';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
             {/* <Route exact path="/services/:serviceId">
               <Service></Service>
             </Route> */}
+            <PrivateRoute exact path="/appointment">
+              <Appointment></Appointment>
+            </PrivateRoute>
             <Route exact path="/contactus">
               <ContactUs></ContactUs>
             </Route>
