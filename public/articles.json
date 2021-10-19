@@ -2,71 +2,49 @@
     {
         "id": 1,
         "author": "Betti Jordeson",
-        "title": "Jordeson",
-        "image": "http://dummyimage.com/249x100.png/dddddd/000000",
-        "text": "Betti"
+        "title": "Common Cat Skin Problems & How To Recognize Them",
+        "image": "https://bondvet.com/static/f18296f896be3776b918d27f57fb0696/a09a8/b686af134e076f4a0667a4e0a30b33b99e3f232603d07ed465ba614b3d06ff89.jpg.webp",
+        "text": "While skin diseases are a common cause for veterinary visits, they can be frustrating for humans and felines alike. Itchy skin, rashes, infections, and other skin conditions in cats can be uncomfortable and interfere with daily activities like playtime and catnaps.",
+        "link": "https://bondvet.com/b/b-cat-skin-problems"
     },
     {
         "id": 2,
         "author": "Koressa Briant",
-        "title": "Briant",
-        "image": "http://dummyimage.com/249x100.png/ff4444/ffffff",
-        "text": "Koressa"
+        "title": "Kennel Cough in Dogs: Symptoms, Treatment, and Prevention",
+        "image": "https://bondvet.com/static/c9bc8086ffd98b480580aabb885e2f5a/a09a8/bc7199fcad77f78f95f0525cf354e0080c6a3c2f604d2cadc9e7c830f2a17665.jpg.webp",
+        "text": "Kennel cough is a common, contagious disease that produces coughing and other upper respiratory symptoms in dogs. The disease can cause significant discomfort — and in some cases, serious complications — but it usually responds very well to veterinary treatment. Here are some important things to know about kennel cough, including how to treat and prevent the disease.",
+        "link": "https://bondvet.com/b/kennel-cough-in-dogs"
     },
     {
         "id": 3,
         "author": "Demetris Burnep",
-        "title": "Burnep",
-        "image": "http://dummyimage.com/140x100.png/dddddd/000000",
-        "text": "Demetris"
+        "title": "Dog Rash: Common Causes, Symptoms, and Treatments",
+        "image": "https://bondvet.com/static/be0d2c18f9dc5ca7157ed5c72caed478/a09a8/3c946b06e1a97607896db7c49d1358b93d5e98f59ee50d2222082321b85b5138.jpg.webp",
+        "text": "Skin problems are one of the most common issues that veterinarians treat. Rashes, itchy skin, or other skin issues can be very uncomfortable and interfere with a dog’s favorite activities, not to mention their sleep schedule. Fortunately, with the right treatment plan, symptoms can often be eliminated, or at least minimized. ",
+        "link": "https://bondvet.com/b/dog-rash"
     },
     {
         "id": 4,
         "author": "Christine Passmore",
-        "title": "Passmore",
-        "image": "http://dummyimage.com/133x100.png/ff4444/ffffff",
-        "text": "Christine"
+        "title": "Pancreatitis in Dogs: Diagnosis, Treatment, and Recovery",
+        "image": "https://bondvet.com/static/7eb6a20318bb01f38a18fb79a5fb5309/a09a8/eb98f90f2e6aee1367af62907657a5f8cb93599af28a6be35c7c2873c3e90187.jpg.webp",
+        "text": "Pancreatitis is a relatively common condition in dogs. It can occur in any age, breed, or gender, although it is more common in certain breeds. Symptoms of illness can vary in intensity from mild to severe, and dogs may have acute (sudden) or chronic (long-term) pancreatitis. ",
+        "link": "https://bondvet.com/b/pancreatitis-in-dogs"
     },
     {
         "id": 5,
         "author": "Nanice Wardingly",
-        "title": "Wardingly",
-        "image": "http://dummyimage.com/164x100.png/cc0000/ffffff",
-        "text": "Nanice"
+        "title": "Pancreatitis in Cats: Diagnosis, Treatment, & Recovery",
+        "image": "https://bondvet.com/static/79b176f029a27ad0cd39762fac7309f5/a09a8/3ddfb0ae81720304dea59446e88532fa1406a0037e0fddeaf8cbd3593712ceef.jpg.webp",
+        "text": "Pancreatitis can occur in any age, breed, or gender of cat, often suddenly and without a known underlying cause. While previously thought to be rare, newer diagnostic tests have revealed that feline pancreatitis is fairly common. \n The intensity of the illness is highly variable, with the condition usually classified as either acute (sudden) or chronic (long-term), and as mild or severe. However, it’s always important to seek veterinary care, because pancreatitis can be life-threatening. ",
+        "link": "https://bondvet.com/b/pancreatitis-in-cats"
     },
     {
         "id": 6,
         "author": "Gloriane Lebel",
-        "title": "Lebel",
-        "image": "http://dummyimage.com/215x100.png/cc0000/ffffff",
-        "text": "Gloriane"
-    },
-    {
-        "id": 7,
-        "author": "Rois Gierke",
-        "title": "Gierke",
-        "image": "http://dummyimage.com/168x100.png/cc0000/ffffff",
-        "text": "Rois"
-    },
-    {
-        "id": 8,
-        "author": "Paulina Giacobini",
-        "title": "Giacobini",
-        "image": "http://dummyimage.com/197x100.png/dddddd/000000",
-        "text": "Paulina"
-    },
-    {
-        "id": 9,
-        "author": "Georgina Rudram",
-        "title": "Rudram",
-        "image": "http://dummyimage.com/100x100.png/cc0000/ffffff",
-        "text": "Georgina"
-    },
-    {
-        "id": 10,
-        "author": "Joanna Ivshin",
-        "title": "Ivshin",
-        "image": "http://dummyimage.com/170x100.png/dddddd/000000",
-        "text": "Joanna"
+        "title": "Five Ways Your Best (Pet) Friend Can Improve Your Health",
+        "image": "https://bondvet.com/static/ec77b580301b343a3807db06880c79f8/a09a8/6e8d2176fa8afd28d1a2d168c998726faf39c4f27039d108f756da1e8617d31e.jpg.webp",
+        "text": "As a pet parent, you likely already have a sense of how much your life has improved because of your furry friend. Between pets’ unconditional love and companionship, it’s no wonder many people consider them members of the family. But science shows that your fur baby may offer more than just cuddles and company. ",
+        "link": "https://bondvet.com/b/five-ways-your-best-pet-friend-can-improve-your-health"
     }
 ]

@@ -1,19 +1,13 @@
 import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
+import useCareTips from "../../hooks/useCareTips";
 import CareTipCard from "./CareTipCard";
+
+import './CareTips.css'
 
 const CareTips = () => {
 
-    const [articles, setArticles] = useState([]);
-
-    useEffect(() => {
-        fetch('./articles.json')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setArticles(data);
-            })
-    }, [])
+    const articles = useCareTips();
 
     return (
         <div>

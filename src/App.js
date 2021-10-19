@@ -14,6 +14,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Appointment from './components/Appointment/Appointment';
 import CareTips from './components/CareTips/CareTips';
+import CareTip from './components/CareTips/CareTip';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
             <Route exact path="/caretips">
               <CareTips></CareTips>
             </Route>
+            <PrivateRoute exact path="/caretips/:caretipId">
+              <CareTip></CareTip>
+            </PrivateRoute>
             <PrivateRoute exact path="/appointment">
               <Appointment></Appointment>
             </PrivateRoute>

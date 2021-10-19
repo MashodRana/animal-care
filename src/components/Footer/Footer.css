@@ -24,3 +24,9 @@
   footer {
     background: #212529;
   }
+
+  .custom-footer .social-links p span{
+    font-size: 25px;
+    margin-right: 5px;
+    color: white;
+  }
