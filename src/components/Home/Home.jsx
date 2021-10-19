@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React from "react";
 import useServices from "../../hooks/useServices";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import './Home.css'
