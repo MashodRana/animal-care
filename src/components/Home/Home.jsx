@@ -44,6 +44,42 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="reason-section my-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <h2>
+                                We’re Different
+                            </h2>
+                            <p>
+                                Animal Care is an animal clinic designed around you and your pet.
+                                Because that’s how we think pet care should work.
+                            </p>
+                        </div>
+                        <div className="col">
+                            <div>
+                                <h6>Easy Appointments</h6>
+                                <p>A friendly place to bring your pet for urgent care.</p>
+                            </div>
+                            <div>
+                                <h6>Convenient Hours</h6>
+                                <p>We’re open 10am – 8pm every day, even holidays.</p>
+                            </div>
+                            <div>
+                                <h6>Virtual Visits
+                                </h6>
+                                <p>Chat with our vets online. Book A Telehealth Visit.</p>
+                            </div>
+                            <div>
+                                <h6>Compassionate Vets</h6>
+                                <p>We provide top-notch
+                                    care for your furry BFFs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };
