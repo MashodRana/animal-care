@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Appointment from './components/Appointment/Appointment';
+import CareTips from './components/CareTips/CareTips';
 
 
 function App() {
@@ -35,9 +36,9 @@ function App() {
             <PrivateRoute exact path="/services/:serviceId">
               <Service></Service>
             </PrivateRoute>
-            {/* <Route exact path="/services/:serviceId">
-              <Service></Service>
-            </Route> */}
+            <Route exact path="/caretips">
+              <CareTips></CareTips>
+            </Route>
             <PrivateRoute exact path="/appointment">
               <Appointment></Appointment>
             </PrivateRoute>
