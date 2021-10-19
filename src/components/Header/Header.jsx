@@ -8,7 +8,7 @@ const Header = () => {
   const { user, logOut } = useAuth();
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid d-flex justify-content-between">
           <span>
             <NavLink className="navbar-brand" to="/">Animal Care</NavLink>
@@ -21,9 +21,6 @@ const Header = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <NavLink to="/home" className="nav-link">Home</NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink to="/services" className="nav-link">Services</NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/appointment" className="nav-link">Appointment</NavLink>

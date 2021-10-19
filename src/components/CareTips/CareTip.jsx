@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router";
-import { useState } from "react/cjs/react.development";
 import useCareTips from "../../hooks/useCareTips";
-import CareTipCard from "./CareTipCard";
 
 import './CareTips.css'
 

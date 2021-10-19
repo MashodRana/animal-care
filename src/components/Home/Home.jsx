@@ -23,15 +23,15 @@ const Home = () => {
             <div className="demo-services my-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6">
-                            <h2>Services</h2>
-                            <h5>We ensure Best care through our services.</h5>
-                            <p>
+                        <div className="col-5">
+                            <h2 className="fs-1">Services</h2>
+                            <h5>We ensure <span className="custom-color-1">best care</span> through our services.</h5>
+                            <p className="w-75">
                                 We are very much careful about your pet and we try to give our best for your pets.
                                 We understand that at some point your work schedule, or daily routine won’t allow you to stay for your pets physical examination, and diagnostics. We offer a convenient drop off policy that allows you to drop off your pet during the day and pick up at your earliest convenience.
                             </p>
                         </div>
-                        <div className="col-6">
+                        <div className="col-7">
                             <div className="row">
                                 {demoServices.length && demoServices.map(demoService => <ServiceCard
                                     key={demoService.id}
@@ -45,36 +45,53 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="reason-section my-5">
-                <div className="container">
+            <div className="reason-section my-5 pt-2 px-2">
+                <div className="container mt-3">
                     <div className="row">
-                        <div className="col">
-                            <h2>
-                                We’re Different
+                        <div className="col left-side">
+
+                            <h2 className="fs-1 mt-md-5 mt-2">
+                                <span className="custom-color-1">We</span> are <span className="custom-color-1">Different</span>
                             </h2>
-                            <p>
+                            <p className="w-75">
                                 Animal Care is an animal clinic designed around you and your pet.
                                 Because that’s how we think pet care should work.
                             </p>
                         </div>
-                        <div className="col">
-                            <div>
-                                <h6>Easy Appointments</h6>
-                                <p>A friendly place to bring your pet for urgent care.</p>
+                        <div className="col mt-md-5 mt-3">
+                            <div className="d-flex ">
+                                <h1 className="fs-md-2 text-warning"><i class="fas fa-hand-point-right"></i></h1>
+                                <div className="ms-md-5 ms-sm-2">
+                                    <h6>Easy Appointments</h6>
+                                    <p>A friendly place to bring your pet for urgent care.</p>
+                                </div>
+
                             </div>
-                            <div>
-                                <h6>Convenient Hours</h6>
-                                <p>We’re open 10am – 8pm every day, even holidays.</p>
+                            <div className="d-flex ">
+                                <h1 className="fs-md-2 text-warning"><i class="fas fa-hand-point-right"></i></h1>
+                                <div className="ms-md-5 ms-sm-2">
+                                    <h6>Convenient Hours</h6>
+                                    <p>We’re open 10am – 8pm every day, even holidays.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h6>Virtual Visits
-                                </h6>
-                                <p>Chat with our vets online. Book A Telehealth Visit.</p>
+                            <div className="d-flex ">
+                                <h1 className="fs-md-2 text-warning"><i class="fas fa-hand-point-right"></i></h1>
+
+                                <div className="ms-md-5 ms-sm-2">
+                                    <h6>Virtual Visits
+                                    </h6>
+                                    <p>Chat with our vets online. Book A Telehealth Visit.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h6>Compassionate Vets</h6>
-                                <p>We provide top-notch
-                                    care for your furry BFFs.</p>
+                            <div className="d-flex ">
+                                <h1 className="fs-md-2 text-warning"><i class="fas fa-hand-point-right"></i></h1>
+
+                                <div className="ms-md-5 ms-sm-2">
+                                    <h6>Compassionate Vets</h6>
+                                    <p>We provide top-notch
+                                        care for your furry BFFs.</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
