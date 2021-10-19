@@ -1,0 +1,7 @@
+.registration-form input{
+    color:white;
+}
+
+.registration-form input:focus{
+    color:white;
+}
