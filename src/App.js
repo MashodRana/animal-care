@@ -17,65 +17,49 @@ import CareTip from './components/CareTips/CareTip';
 
 
 function App() {
-    return ( <
-        div className = "App" >
-        <
-        AuthProvider >
-        <
-        BrowserRouter >
-        <
-        Header > < /Header> <
-        Switch >
-        <
-        Route exact path = "/" >
-        <
-        Home > < /Home> <
-        /Route> <
-        Route exact path = "/home" >
-        <
-        Home > < /Home> <
-        /Route>
+  return (
+    <div className="App" >
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
 
-
-        <
-        PrivateRoute exact path = "/services/:serviceId" >
-        <
-        Service > < /Service> <
-        /PrivateRoute> <
-        Route exact path = "/caretips" >
-        <
-        CareTips > < /CareTips> <
-        /Route> <
-        PrivateRoute exact path = "/caretips/:caretipId" >
-        <
-        CareTip > < /CareTip> <
-        /PrivateRoute> <
-        PrivateRoute exact path = "/appointment" >
-        <
-        Appointment > < /Appointment> <
-        /PrivateRoute> <
-        Route exact path = "/contactus" >
-        <
-        ContactUs > < /ContactUs> <
-        /Route> <
-        Route exact path = "/login" >
-        <
-        Login > < /Login> <
-        /Route> <
-        Route exact path = "/register" >
-        <
-        Register > < /Register> <
-        /Route> <
-        Route path = "*" >
-        <
-        NotFound > < /NotFound> <
-        /Route> <
-        /Switch> <
-        Footer > < /Footer> <
-        /BrowserRouter> <
-        /AuthProvider> <
-        /div>
-    );
+            <PrivateRoute exact path="/services/:serviceId">
+              <Service></Service>
+            </PrivateRoute>
+            <Route exact path="/caretips">
+              <CareTips></CareTips>
+            </Route>
+            <PrivateRoute exact path="/caretips/:caretipId">
+              <CareTip></CareTip>
+            </PrivateRoute>
+            <PrivateRoute exact path="/appointment">
+              <Appointment></Appointment>
+            </PrivateRoute>
+            <Route exact path="/contactus">
+              <ContactUs></ContactUs>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
+    </div>
+  );
 }
 
 export default App;

@@ -66,6 +66,7 @@ input, textarea {
 
 input:focus, textarea:focus {
     outline: 0;
+    color: white;
 }
 
 input:focus~span, textarea:focus~span {
@@ -77,6 +78,7 @@ input:focus~span, textarea:focus~span {
 textarea {
     width: 100%;
     min-height: 15em;
+    color: white;
 }
 
 .input-container {
