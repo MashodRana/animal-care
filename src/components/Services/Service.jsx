@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useServices from "../../hooks/useServices";
 
 const Service = () => {
-    const services = useServices();
+    // const services = useServices();
+    const [services, setServices] = useState([]);
+
     const { serviceId } = useParams();
     const service = services[serviceId];
+
+    useEffect(() => {
+        // const url = "https://mashodrana.github.io/json-data/services.json";
+        const url = 'services.json'
+        fetch(url)
+            .then(result => result.json())
+            .then(data => {
+                setServices(data);
+            })
+    }, [])
+
     return (
         <div>
             <div className="container">

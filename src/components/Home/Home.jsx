@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import useServices from "../../hooks/useServices";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import './Home.css'
 
 const Home = () => {
     // const [demoServices, setDemoServices] = useState([]);
-    const demoServices = useServices();
+    const [demoServices, setDemoServices] = useState([]);
+    useEffect(() => {
+        // const url = "https://mashodrana.github.io/json-data/services.json";
+        const url = 'services.json'
+        fetch(url)
+            .then(result => result.json())
+            .then(data => {
+                setDemoServices(data);
+            })
+    }, [])
+
     return (
         <>
             <div className="intro-section">

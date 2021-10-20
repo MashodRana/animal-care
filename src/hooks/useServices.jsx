@@ -5,7 +5,7 @@ const useServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
         const url = "https://mashodrana.github.io/json-data/services.json";
-        // const url = './services.json'
+        // const url = 'services.json'
         fetch(url)
             .then(result => result.json())
             .then(data => {
