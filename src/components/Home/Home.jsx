@@ -154,7 +154,7 @@ const Home = () => {
                                     </div>
                                     <div class="carousel-item">
                                         <img src={reviews && reviews[2].image} alt="..." />
-                                        <div class="carousel-caption ">
+                                        <div class="carousel-caption">
                                             <h5>{reviews && reviews[2].name}</h5>
                                             <p>{reviews && reviews[2].review}</p>
                                         </div>
