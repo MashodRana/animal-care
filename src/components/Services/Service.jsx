@@ -29,7 +29,7 @@ const Service = () => {
                             <img className="img-fluid" src={service && service.image} alt="" />
                         </div>
                         <h5>{service && service.service_title}</h5>
-                        <p>Cost: {service && service.service_cost}</p>
+                        <p className="fw-bold">Cost: {service && service.service_cost} $</p>
                         <p>{service && service.service_summary}</p>
 
                     </div>
