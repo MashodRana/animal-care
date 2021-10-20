@@ -31,23 +31,23 @@ const Header = () => {
                 <li className="nav-item">
                   <NavLink to="/contactus" className="nav-link">Contact us</NavLink>
                 </li>
-
+                {user.email && <li className="nav-item"><span className="nav-link">Hello, {user.displayName}</span></li>}
+                <li className="nav-item">
+                  {user.email ?
+                    <button className="btn btn-warning" onClick={logOut}>Log out</button>
+                    :
+                    <NavLink to="/login" className="nav-link">Login</NavLink>}
+                </li>
               </ul>
 
             </div>
           </span>
-          <span>
+          {/* <span>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {user.email && <li className="nav-item"><span className="nav-link">Hello, {user.displayName}</span></li>}
-              <li className="nav-item">
-                {user.email ?
-                  <button className="btn btn-warning" onClick={logOut}>Log out</button>
-                  :
-                  <NavLink to="/login" className="nav-link">Login</NavLink>}
-              </li>
+
 
             </ul>
-          </span>
+          </span> */}
         </div>
       </nav>
     </>

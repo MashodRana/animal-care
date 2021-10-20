@@ -26,18 +26,18 @@ const CareTip = () => {
 
     return (
         <div>
-            <div className="container">
+            <div className="container my-5">
                 <div className="row">
                     <div className="col mx-auto">
                         <div>
-                            <img style={{ height: '200px', width: '200px' }} src={tip && tip.image} alt="" />
+                            <img className="img-fluid" src={tip && tip.image} alt="" />
                         </div>
                         {console.log(careTips)}
                         {console.log(tip)}
                         <h5>{tip && tip.title}</h5>
                         <p>{tip && tip.author}</p>
                         <p>{tip && tip.text}</p>
-                        <p>Read original article <a href={tip && tip.link}>here</a></p>
+                        <p>Read original article <a style={{color:'goldenrod'}} href={tip && tip.link}>here</a></p>
 
                     </div>
                 </div>

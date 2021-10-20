@@ -12,7 +12,7 @@ const CareTipCard = (props) => {
                     <p class="card-text">{article.text}</p>
                 </div>
                 <div class="card-footer border-0 bg-transparent">
-                    <small class="text-muted"> <Link to={`caretips/${_id}`}>Read more</Link> </small>
+                    <small> <Link  style={{color:'goldenrod'}} to={`caretips/${_id}`}>Read more</Link> </small>
                 </div>
             </div>
         </div>

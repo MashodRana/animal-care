@@ -121,10 +121,10 @@ const Home = () => {
 
             <div className="reviews-section my-5">
                 <div className="container">
-                    <div>
-                        <h2>What People Says</h2>
+                    <div className="text-center">
+                        <h2>What <span className="custom-color-1">People</span> Says</h2>
                     </div>
-                    <div className="row">
+                    <div className="row mt-5">
                         <div className="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
