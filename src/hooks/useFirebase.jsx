@@ -21,7 +21,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user;
-                console.log(user);
+                console.log('signed in succesfull:', user);
                 history.push('/home');
             })
             .catch(error => {

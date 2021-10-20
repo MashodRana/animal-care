@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import useServices from "../../hooks/useServices";
 import ServiceCard from "../ServiceCard/ServiceCard";
+import SliderItem from "../SliderItem/SliderItem";
 import './Home.css'
 
 const Home = () => {
     // const [demoServices, setDemoServices] = useState([]);
     const [demoServices, setDemoServices] = useState([]);
+    const [reviews, setReviews] = useState(null);
     useEffect(() => {
         // const url = "https://mashodrana.github.io/json-data/services.json";
         const url = 'services.json'
@@ -14,6 +16,14 @@ const Home = () => {
             .then(data => {
                 setDemoServices(data);
             })
+    }, [])
+
+    useEffect(() => {
+        const url = 'reviews.json';
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setReviews(data))
+            .catch(error => console.log(error.message));
     }, [])
 
     return (
@@ -113,31 +123,53 @@ const Home = () => {
                     <div>
                         <h2>What People Says</h2>
                     </div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div className="row">
+                        <div className="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div className="row">
+                                            <div className="col-5">
+                                                <img src={reviews && reviews[0].image} alt="..." />
+                                            </div>
+                                            <div className="col-7">
+                                                <div class="carousel-caption ">
+                                                    <h5>{reviews && reviews[0].name}</h5>
+                                                    <p>{reviews && reviews[0].review}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src={reviews && reviews[1].image} alt="..." />
+                                        <div class="carousel-caption ">
+                                            <h5>{reviews && reviews[1].name}</h5>
+                                            <p>{reviews && reviews[1].review}</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src={reviews && reviews[2].image} alt="..." />
+                                        <div class="carousel-caption ">
+                                            <h5>{reviews && reviews[2].name}</h5>
+                                            <p>{reviews && reviews[2].review}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="..." />
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
