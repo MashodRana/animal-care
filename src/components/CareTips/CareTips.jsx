@@ -11,7 +11,7 @@ const CareTips = () => {
 
     useEffect(() => {
 
-        const url = "https://mashodrana.github.io/json-data/care_articles.json";
+        const url = "https://mashodrana.github.io/json-data-api/articles.json";
         // const url = "care_articles.json"
         fetch(url)
             .then(res => res.json())

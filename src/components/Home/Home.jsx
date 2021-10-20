@@ -5,12 +5,12 @@ import SliderItem from "../SliderItem/SliderItem";
 import './Home.css'
 
 const Home = () => {
-    // const [demoServices, setDemoServices] = useState([]);
     const [demoServices, setDemoServices] = useState([]);
+    // const demoServices = useServices();
     const [reviews, setReviews] = useState(null);
     useEffect(() => {
-        // const url = "https://mashodrana.github.io/json-data/services.json";
-        const url = 'services.json'
+        const url = "https://mashodrana.github.io/json-data-api/services.json";
+        // const url = 'services.json'
         fetch(url)
             .then(result => result.json())
             .then(data => {
@@ -20,6 +20,7 @@ const Home = () => {
 
     useEffect(() => {
         const url = 'reviews.json';
+        // const url = "https://gist.githubusercontent.com/MashodRana/1bfbfb36faa866ad6bf1057ac3eca4ae/raw/67ab5f4b7c78a7da99c06b58d90c0bb688c471ba/reviews.json"
         fetch(url)
             .then(res => res.json())
             .then(data => setReviews(data))
@@ -138,7 +139,7 @@ const Home = () => {
                                                 <img src={reviews && reviews[0].image} alt="..." />
                                             </div>
                                             <div className="col-7">
-                                                <div class="carousel-caption ">
+                                                <div>
                                                     <h5>{reviews && reviews[0].name}</h5>
                                                     <p>{reviews && reviews[0].review}</p>
                                                 </div>
@@ -146,17 +147,29 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src={reviews && reviews[1].image} alt="..." />
-                                        <div class="carousel-caption ">
-                                            <h5>{reviews && reviews[1].name}</h5>
-                                            <p>{reviews && reviews[1].review}</p>
+                                        <div className="row">
+                                            <div className="col-5">
+                                                <img src={reviews && reviews[1].image} alt="..." />
+                                            </div>
+                                            <div className="col-7">
+                                                <div >
+                                                    <h5>{reviews && reviews[1].name}</h5>
+                                                    <p>{reviews && reviews[1].review}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src={reviews && reviews[2].image} alt="..." />
-                                        <div class="carousel-caption">
-                                            <h5>{reviews && reviews[2].name}</h5>
-                                            <p>{reviews && reviews[2].review}</p>
+                                        <div className="row">
+                                            <div className="col-5">
+                                                <img src={reviews && reviews[2].image} alt="..." />
+                                            </div>
+                                            <div className="col-7">
+                                                <div >
+                                                    <h5>{reviews && reviews[2].name}</h5>
+                                                    <p>{reviews && reviews[2].review}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
