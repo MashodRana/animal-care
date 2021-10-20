@@ -24,6 +24,10 @@ const Service = () => {
             <div className="container">
                 <div className="row my-5">
                     <div className="col-6 mx-auto border rounded p-2">
+                        <div>
+                            {console.log(service)}
+                            <img src={service && service.image} alt="" />
+                        </div>
                         <h5>{service && service.service_title}</h5>
                         <p>Cost: {service && service.service_cost}</p>
                         <p>{service && service.service_summary}</p>
